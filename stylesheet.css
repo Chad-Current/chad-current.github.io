@@ -1,14 +1,30 @@
 body{
   margin: auto;
-  background-color: #fafafa;
+  padding: 50px, 0px, 10px, 0px;
+  background-color: #0f1010;
+  border: 1px solid white;
 }
+/* Color schemes innovative and Audacious
+#272727 Blackish
+#747474 grayish
+#ff652f orangish
+#ffe400 yellowish
+14a76c greenish
+ */
 
+/* Color schemes Sleek and Futuristic
+#2c3531 black-grey
+#116466 darker teal
+#d9b08c natural brownish
+#ffcb9a natural salmon
+#d1e8e2 lighter blue
+*/
+
+/* Color schemes */
 .HeadContainer {
-  background-color: #AAA;
   display:flex;
-  justify-content: center;
+  justify-content:center;
   flex-direction:column;
-  /* border: 1px solid black; */
 }
 
 .HeaderBlock {
@@ -17,43 +33,41 @@ body{
   align-items: center;
   align-content: center;
   border: inherit;
-  /* background-image: url("header_not_for_production.jpg"); */
-  /* background-image: url("small-business-accounting-software.jpg"); */
-  background-color: #005691;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  color: #000;
   height: 20em;
 }
 .Header{
-  font-size:80px;
-  font-family: "suranna";
+  font-size:48px;
+  font-family: "Lora";
+  color: #ff652f;
 }
 .Navigation {
   display: flex;
   justify-content:flex-end;
   flex-wrap: wrap;
-  background-color: #004a7c;
-  color: #fff;
+  /* background-color: #272727; */
+  /* color: #d9b08c; */
   font-family: "suranna";
 }
 .Navigation a{
   padding: 5px 10px 5px 5px;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
 }
 a:link{
-  color:white;
+  color:#ffe400;
 }
 a:visited{
-  color:white;
+  color:#ffe400;
 }
 a:hover{
-  color:#000;
+  color:#ffe100;
 }
 a:active{
-  color:red;
+  color:#ffe400;
 }
 
 
@@ -68,7 +82,7 @@ a:active{
 }
 
 .images {
-
+  padding: 100px,0px,100px,0px;
 }
 .texts{
 
