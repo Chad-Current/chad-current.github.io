@@ -1,8 +1,19 @@
+/* *{
+  border: solid white 1px;
+} */
+
 body{
   margin: auto;
-  padding: 50px, 0px, 10px, 0px;
-  background-color: #0f1010;
   border: 1px solid white;
+  background-color: #272727;
+  /* background-image: url('background1.jpg');
+  background-attachment: fixed; */
+}
+p {
+    text-indent: 1.25em;
+    font-size: 1em;
+    line-height: 2em;
+    color: #14a76c;
 }
 /* Color schemes innovative and Audacious
 #272727 Blackish
@@ -21,10 +32,11 @@ body{
 */
 
 /* Color schemes */
+
 .HeadContainer {
   display:flex;
-  justify-content:center;
-  flex-direction:column;
+  justify-content: center;
+  height: 20em;
 }
 
 .HeaderBlock {
@@ -32,58 +44,91 @@ body{
   justify-content: center;
   align-items: center;
   align-content: center;
-  border: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #000;
-  height: 20em;
+
 }
 .Header{
   font-size:48px;
   font-family: "Lora";
   color: #ff652f;
 }
-.Navigation {
+/* .Navigation {
   display: flex;
   justify-content:flex-end;
   flex-wrap: wrap;
-  /* background-color: #272727; */
-  /* color: #d9b08c; */
   font-family: "suranna";
 }
 .Navigation a{
   padding: 5px 10px 5px 5px;
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
 }
 a:link{
-  color:#ffe400;
+  color: #14a76c;
 }
 a:visited{
-  color:#ffe400;
+  color: #14a76c;
 }
 a:hover{
-  color:#ffe100;
+  color:#bababa;
 }
 a:active{
-  color:#ffe400;
-}
+  color:# #14a76c;
+} */
 
-
-.Services{
+.Container{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 1px solid black;
-  width: auto;
-  height: 35em;
-  margin:0.75em;
+  /* justify-content: space-between; */
+  margin: 10em 0em;
+  background-color: #252525;
+}
+.Pic-side {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 0em 2em;
+}
+.Pic-side img{
+  height: 20em;
+  border: solid #ffe400 2px;
 }
 
-.images {
-  padding: 100px,0px,100px,0px;
+.Blog-side{
+    padding: 0em 2em 0em 2em;
+    font-family: Arimo;
+    color: #14a76c;
 }
-.texts{
-
+.Github-link{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self:flex-start;
+  /* color: #fff; */
+}
+.Github-link a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: Roboto;
+  /* color: #14a76c; */
+}
+a:link{
+  color: #747474;
+}
+a:visited{
+  color: #747474;
+}
+a:hover{
+  color:#747474;
+}
+a:active{
+  color:# #747474;
+}
+.Github-link img{
+  width:3em;
+  height:3em;
+}
+.Github-link p{
+  color: #747474;
 }
