@@ -6,7 +6,7 @@ body{
   margin: auto;
   border: 1px solid white;
   /* background-color: #272727; */
-  background-image: url('background2_gaus.jpg');
+  background-image: url('./background2_gaus.jpg');
   background-position: center;
   background-attachment: fixed;
 }
