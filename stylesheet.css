@@ -43,13 +43,13 @@ body{
   flex-direction: column;
 }
 .Header{
-  font-size:4em;
+  font-size: 3em;
   font-family: "Lora";
   text-shadow: 2px 2px #000000;
   color: #14a76c;
 }
 .SubHeader{
-  font-size: 2.25em;
+  font-size: 1.75em;
   font-family: "Lora";
   color: white;
 }
