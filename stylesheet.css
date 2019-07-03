@@ -5,16 +5,12 @@
 body{
   margin: auto;
   border: 1px solid white;
-  background-color: #272727;
-  /* background-image: url('background1.jpg');
-  background-attachment: fixed; */
+  /* background-color: #272727; */
+  background-image: url('background2_gaus.jpg');
+  background-position: center;
+  background-attachment: fixed;
 }
-p {
-    text-indent: 1.25em;
-    font-size: 1em;
-    line-height: 2em;
-    color: #14a76c;
-}
+
 /* Color schemes innovative and Audacious
 #272727 Blackish
 #747474 grayish
@@ -44,12 +40,18 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
-
+  flex-direction: column;
 }
 .Header{
-  font-size:48px;
+  font-size:72px;
   font-family: "Lora";
-  color: #ff652f;
+  text-shadow: 2px 2px #000000;
+  color: #14a76c;
+}
+.SubHeader{
+  font-size: 48px;
+  font-family: "Lora";
+  color: white;
 }
 /* .Navigation {
   display: flex;
@@ -78,8 +80,8 @@ a:active{
 .Container{
   display: flex;
   /* justify-content: space-between; */
-  margin: 10em 0em;
-  background-color: #252525;
+  margin: 10em 1em;
+  background-color: #202020;
 }
 .Pic-side {
   display: flex;
@@ -88,47 +90,53 @@ a:active{
   padding: 0em 2em;
 }
 .Pic-side img{
-  height: 20em;
+  height: 25em;
+  width: 25em;
   border: solid #ffe400 2px;
 }
 
 .Blog-side{
     padding: 0em 2em 0em 2em;
     font-family: Arimo;
+    color: #09a76c;
+}
+.Blog-side h1{
+  font-size: 3em;
+  font-family: Merriweather;
+}
+.Blog-side-p {
+    text-indent: 10em;
+    font-size: 1em;
+    line-height: 2em;
     color: #14a76c;
 }
 .Github-link{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-self:flex-start;
-  /* color: #fff; */
 }
 .Github-link a{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-family: Roboto;
   /* color: #14a76c; */
 }
-a:link{
-  color: #747474;
-}
-a:visited{
-  color: #747474;
-}
-a:hover{
-  color:#747474;
-}
-a:active{
-  color:# #747474;
-}
 .Github-link img{
-  width:3em;
-  height:3em;
+  width:2.5em;
+  height:2.5em;
+  margin-right: 1em;
 }
 .Github-link p{
-  color: #747474;
+  color: #ff652f;
+}
+.Footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  background: #fafafa;
 }
