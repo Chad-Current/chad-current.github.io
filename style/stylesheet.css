@@ -1,7 +1,8 @@
 body{
-  background-image: url('../images/background2_gaus.jpg');
+  /* background-image: url('../images/background2_gaus.jpg');
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background: #050505;
   margin:0;
   padding:0;
 }
@@ -18,23 +19,7 @@ body::-webkit-scrollbar-thumb{
  :root{
    font-size: 12px;
  }
-/* Color schemes innovative and Audacious
-#272727 Blackish
-#747474 grayish
-#ff652f orangish
-#ffe400 yellowish
-14a76c greenish
- */
 
-/* Color schemes Sleek and Futuristic
-#2c3531 black-grey
-#116466 darker teal
-#d9b08c natural brownish
-#ffcb9a natural salmon
-#d1e8e2 lighter blue
-*/
-
-/* Color schemes */
 p{
   color: white;
   margin-left: 5rem;
@@ -46,7 +31,7 @@ a {
 
 li {
   list-style: none;
-  color: #FAFAFA;
+  color: #ff652f;
   font-size: 1rem;
   font-family: "Lora";
   padding-bottom: 0.5em;
@@ -57,7 +42,7 @@ li {
   width: 5rem;
   height: 100vh;
   position: fixed;
-  background: #050505;
+  background: #202020;
   transition: width 250ms ease;
 }
 
@@ -66,7 +51,7 @@ li {
 }
 .side-navbar:hover .side-link-text{
   display: block;
-  color: #FAFAFA;
+  color: #14a76c;
 }
 .side-navbar a{
   text-decoration: none;
@@ -88,7 +73,7 @@ li {
   /* text-decoration: none; */
 }
 .side-nav-item:hover{
-  background: #202020;
+  background: #505050;
   opacity: 100%;
 }
 
@@ -102,26 +87,26 @@ li {
   min-width: 2rem;
   margin: 0 1.5rem;
   font-size: 2rem;
-  color: #4666FF;
+  color: #14a76c;
 }
 
 .side-navbar i{
   transform: rotate(0deg);
   transition: 200ms ease;
-  width: 0%;
   opacity: 100%;
 }
 
 .side-navbar:hover i{
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
   transition: 200ms ease;
-  width: 100%;
 }
 
 .side-link-text{
   display: none;
   margin-left: 1em;
   font-size: 1.25rem;
+  font-family: "Merriweather";
+  font-weight: 900;
 }
 
 .logo {
@@ -168,6 +153,7 @@ li {
   margin: 10em 1em;
   background-color: #202020;
 }
+
 .Pic-side {
   display: flex;
   justify-content: center;
