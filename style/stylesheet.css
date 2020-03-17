@@ -102,16 +102,20 @@ li {
   min-width: 2rem;
   margin: 0 1.5rem;
   font-size: 2rem;
-  color: white;
+  color: #4666FF;
 }
 
 .side-navbar i{
   transform: rotate(0deg);
   transition: 200ms ease;
+  width: 0%;
+  opacity: 100%;
 }
+
 .side-navbar:hover i{
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
   transition: 200ms ease;
+  width: 100%;
 }
 
 .side-link-text{
@@ -120,6 +124,12 @@ li {
   font-size: 1.25rem;
 }
 
+.logo {
+  opacity: 100%;
+}
+.logo i {
+  color: #14a76c;
+}
 .main{
   display: flex;
   flex-direction: column;
