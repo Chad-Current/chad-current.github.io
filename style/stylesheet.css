@@ -1,3 +1,4 @@
+
 body{
   /* background-image: url('../images/background2_gaus.jpg');
   background-position: center;
@@ -7,7 +8,7 @@ body{
   padding:0;
 }
 body::-webkit-scrollbar{
-  width: 0.25rem;
+  width: 0.5em;
 }
 body::-webkit-scrollbar-track{
   background: #050505;
@@ -16,12 +17,16 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
   background: #FAFAFA;
 }
+
  :root{
    font-size: 12px;
+   --main-color: #4666FF;
+   --sub-color: yellow;
+   --bar-color: #050505;
  }
 
 p{
-  color: white;
+  color: var(--sub-color);
   margin-left: 5rem;
 }
 a {
@@ -31,7 +36,8 @@ a {
 
 li {
   list-style: none;
-  color: #ff652f;
+  /* color: #ff652f; */
+  color: var(--main-color);
   font-size: 1.5rem;
   font-family: "Lora";
   padding-bottom: 1em;
@@ -41,6 +47,13 @@ li {
 iframe {
   border: none;
   color: inherit;
+}
+
+img {
+  background-color: #252525;
+  width: 20em;
+  height: 20em;
+  border-radius: 50px;
 }
 
 .side-navbar{
@@ -56,7 +69,7 @@ iframe {
 }
 .side-navbar:hover .side-link-text{
   display: block;
-  color: #14a76c;
+  color: var(--sub-color);
 }
 .side-navbar a{
   text-decoration: none;
@@ -78,7 +91,7 @@ iframe {
   /* text-decoration: none; */
 }
 .side-nav-item:hover{
-  background: #505050;
+  background: var(--bar-color);
   opacity: 100%;
 }
 
@@ -92,7 +105,7 @@ iframe {
   min-width: 2rem;
   margin: 0 1.5rem;
   font-size: 2rem;
-  color: #14a76c;
+  color: var(--sub-color);
 }
 
 .side-navbar i{
@@ -118,7 +131,7 @@ iframe {
   opacity: 100%;
 }
 .logo i {
-  color: #14a76c;
+  color: var(--sub-color);
 }
 .main{
   display: flex;
@@ -145,12 +158,12 @@ iframe {
   font-size: 3em;
   font-family: "Lora";
   text-shadow: 2px 2px #000000;
-  color: #14a76c;
+  color: var(--main-color);
 }
 .SubHeader{
   font-size: 1.75em;
   font-family: "Lora";
-  color: white;
+  color: var(--sub-color);
 }
 
 .Container{
@@ -173,18 +186,18 @@ iframe {
 
 .Blog-side{
     padding: 0em 2em 0em 2em;
-    font-family: Arimo;
-    color: #09a76c;
+    font-family: "Arimo";
+    color: var(--main-color);
 }
 .Blog-side h1{
   font-size: 3em;
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 .Blog-side-p {
     text-indent: 10em;
     font-size: 1em;
     line-height: 2em;
-    color: #14a76c;
+    color: var(--main-color);
 }
 .Github-link{
   display: flex;
@@ -198,7 +211,7 @@ iframe {
   /* justify-content: space-between; */
   text-decoration: none;
   font-size: 1.75em;
-  font-family: Roboto;
+  font-family: "Roboto";
   /* color: #14a76c; */
 }
 .Github-link img{
