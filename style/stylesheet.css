@@ -31,7 +31,6 @@ p{
 }
 a {
   text-decoration: none;
-  /* padding: 1rem; */
 }
 
 li {
@@ -61,11 +60,13 @@ img {
   height: 100vh;
   position: fixed;
   background: #202020;
+  /* border-left: solid 3px var(--sub-color); */
+  border-right: solid 10px var(--sub-color);
   transition: width 250ms ease;
 }
 
 .side-navbar:hover{
-  width: 8rem;
+  width: 10rem;
 }
 .side-navbar:hover .side-link-text{
   display: block;
@@ -121,8 +122,9 @@ img {
 
 .side-link-text{
   display: none;
-  margin-left: 1em;
-  font-size: 1.25rem;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1rem;
   font-family: "Merriweather";
   font-weight: 900;
 }
@@ -137,8 +139,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 6rem;
-  padding: 1rem;
+  margin-left: 10em;
+  /* padding: 1rem; */
 }
 
 .HeadContainer {
@@ -170,6 +172,7 @@ img {
   display: flex;
   margin: 10em 1em;
   background-color: #202020;
+  border: solid 3px #ff652f;
 }
 
 .Pic-side {
@@ -189,6 +192,7 @@ img {
     font-family: "Arimo";
     color: var(--main-color);
 }
+
 .Blog-side h1{
   font-size: 3em;
   font-family: "Merriweather";
