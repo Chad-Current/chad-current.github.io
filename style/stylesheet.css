@@ -4,6 +4,7 @@ body{
   background-position: center;
   background-attachment: fixed; */
   background: #050505;
+  /* background-image: linear-gradient(to top, #39FF14, #1b03a3); */
   margin:0;
   padding:0;
 }
@@ -28,6 +29,10 @@ body::-webkit-scrollbar-thumb{
 p{
   color: var(--sub-color);
   margin-left: 5rem;
+}
+
+h1 {
+  color: #4666FF;
 }
 a {
   text-decoration: none;
@@ -89,7 +94,7 @@ img {
 .side-nav-item{
   opacity: 35%;
   width: 100%;
-  /* text-decoration: none; */
+  padding: 0;
 }
 .side-nav-item:hover{
   background: var(--bar-color);
@@ -184,7 +189,7 @@ img {
 .Pic-side img{
   height: 25em;
   width: 25em;
-  border: solid #ffe400 2px;
+  border: solid #4666FF 2px;
 }
 
 .Blog-side{
