@@ -16,7 +16,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-  background: #FAFAFA;
+  background: var(--sub-color);
 }
 
  :root{
@@ -55,9 +55,24 @@ iframe {
 
 img {
   background-color: #252525;
+  width: 35em;
+  height: 35em;
+}
+
+.img-sm {
   width: 20em;
   height: 20em;
+}
+
+.img-bg {
+  width: 40em;
+  height: 40em;
+  border: solid #4666FF 2px;
   border-radius: 50px;
+}
+
+table {
+  width: 100%;
 }
 
 .side-navbar{
@@ -145,7 +160,9 @@ img {
   flex-direction: column;
   justify-content: center;
   margin-left: 10em;
-  /* padding: 1rem; */
+  color: white;
+  padding: 1em;
+  border: none;
 }
 
 .HeadContainer {
@@ -177,60 +194,84 @@ img {
   display: flex;
   margin: 10em 1em;
   background-color: #202020;
-  border: solid 3px #ff652f;
+  border: solid 0.25rem #ff652f;
 }
 
 .Pic-side {
   display: flex;
   justify-content: center;
-  align-self: center;
-  padding: 0em 2em;
-}
-.Pic-side img{
-  height: 25em;
-  width: 25em;
-  border: solid #4666FF 2px;
+  align-self: flex-start;
+  padding: 2.5em 2em;
 }
 
 .Blog-side{
-    padding: 0em 2em 0em 2em;
-    font-family: "Arimo";
-    color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 2em;
+  font-family: "Arimo";
+  color: var(--main-color);
 }
 
 .Blog-side h1{
   font-size: 3em;
   font-family: "Merriweather";
 }
+
 .Blog-side-p {
-    text-indent: 10em;
-    font-size: 1em;
+    text-indent: 2em;
+    font-size: 1.25em;
+    font-family: "Lora";
     line-height: 2em;
+    margin-bottom: 5em;
     color: var(--main-color);
 }
+.jupnotes{
+  /* padding: 1em; */
+  font-size: 1rem;
+  color: white;
+  background: black;
+}
+.jupnotes ul {
+}
+
+.jupnotes li{
+  padding: 0.5em;
+  font-size: 1rem;
+  color: white;
+  background: black;
+}
+
+.dataframe {
+  background: white;
+  color: black;
+}
+
 .Github-link{
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-self:flex-start;
+  flex-flow: row;
+  margin-bottom: 3em;
 }
+
 .Github-link a{
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
+  align-items: center;
   text-decoration: none;
   font-size: 1.75em;
   font-family: "Roboto";
-  /* color: #14a76c; */
+  color: #4666FF;
 }
+
 .Github-link img{
   width:2.5em;
   height:2.5em;
-  margin-right: 1em;
+  margin: 0em 1.5em;
 }
+
 .Github-link p{
   color: #ff652f;
 }
+
 .Footer{
   display: flex;
   justify-content: center;
