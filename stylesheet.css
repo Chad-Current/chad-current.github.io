@@ -1,0 +1,339 @@
+/* *{
+  border: solid 1px red;
+} */
+/* #687864 green grey */
+/* #31708E darkest blue */
+/* #5085A5 medium blue */
+/* #8FC1E3 lighest blue */
+/* #F7F9FB whitish grey */
+body{
+  background: #F7F9FB;
+  margin: auto 0;
+  padding:0;
+}
+body::-webkit-scrollbar{
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track{
+  background: #050505;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--sub-color);
+}
+:root{
+   font-size: 12px;
+   --main-color: #8FC1E3;
+   --sub-color: #EEF1EF;
+   --bar-color: #050505;
+   --a-color: #31708E;
+   --i-color: #119911;
+   --head-color: #F7F9FB;
+   --other-color: #687864;
+   --main-font: "MuseoModerno";
+   --sub-font: "Roboto";
+   --spacing-top-bar: 0em 0em 0em 0em;
+   --spacing-bottom-bar: 5em 0em 20em 0em;
+   --spacing-main: 10em 2em;
+   --spacing-sub: 35em 2em;
+   --gradient: linear-gradient(to right, #4D4DFF, #39FF14);
+ }
+
+a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: var(--sub-font);
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--a-color);
+  transition: all .35s ease-out;
+  display: block;
+}
+
+h1{
+  font-family: var(--main-font);
+}
+
+i{
+  font-size: 10rem;
+  font-family: var(--sub-font);
+  color: #FFF;
+  padding: 1rem;
+}
+
+iframe{
+  border: inset 5px var(--main-color);
+}
+
+img{
+  width: 350px;
+  height: 350px;
+}
+
+p{
+  font-size: 1.5rem;
+  font-family: var(--sub-font);
+  line-height: 2rem;
+  text-indent: 2rem;
+  text-align: left;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullscreen{
+  width:100%;
+  height: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 0em;
+  font-size: 3rem;
+  font-family: inherit;
+  background: var(--a-color);
+  border-top: solid 1px black;
+}
+
+.header h1{
+  color: #F5F5F5;
+}
+
+.main{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:center;
+  margin: var(--spacing-top-bar);
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+  background: var(--a-color);
+  border-bottom: solid 1px black;
+  /* margin: var(--spacing-bottom-bar); */
+}
+
+#navbar {
+  overflow: hidden;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+  color: #050505;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 50px;
+}
+/* .bgc {
+  background: linear-gradient(to left, #5085A5 50% , #F7F9FB 50%);
+  background-size: 200% 100%;
+  background-position: left top;
+  transition: all 350ms ease-out;
+  padding: 1.25rem;
+}
+
+.bgc:hover {
+  background-position: right top;
+  border-radius: 10px;
+}
+.bgc:hover .nav-link{
+  color: #FFF;
+}
+
+.bgc-left {
+  background: linear-gradient(to right, #5085A5 50% , #F7F9FB 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 350ms ease-out;
+  padding: 1.25rem;
+}
+
+.bgc-left:hover {
+  background-position: left top;
+  border-radius: 10px;
+}
+
+.bgc-left:hover .nav-link{
+  color: #FFF;
+} */
+
+.interest{
+  font-size: 3rem;
+  font-family: var(--main-font);
+}
+
+.interest{
+  font-size: 5rem;
+  font-family: var(--sub-font);
+  color: var(--a-color);
+}
+
+.box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-content: space-between;
+}
+
+
+.left {
+  /* padding: 2em; */
+}
+.right {
+  /* padding: 2em; */
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300px;
+  width: 100%;
+  background: #001133;
+}
+
+.small{
+  font-size: 5rem;
+}
+
+#one{
+  /* border: solid 1px blue; */
+  margin: var(--spacing-main);
+  padding-top: 10em;
+}
+#two{
+  margin: var(--spacing-sub);
+  width: 80%;
+  height: 300px;
+  padding-top: 10em;
+}
+
+#three{
+  border: solid 1px green;
+  margin: var(--spacing-sub);
+  width: 80%;
+  height: 300px;
+  padding-top: 10em;
+}
+
+
+.flip-box {
+  background-color: transparent;
+  width: 350px;
+  height: 550px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+  padding: 10em;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1000ms;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  /* background-color: #bbb; */
+  padding: 1em;
+  color: black;
+}
+
+.flip-box-back {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  /* color: var(--main-color); */
+  transform: rotateY(180deg);
+  border: solid 1px black;
+  background: #FFF;
+}
+
+.flip-box-back a{
+  color: black;
+}
+.wrapper{
+  border-left: 30px solid transparent;
+  /* border-top: 15px solid transparent; */
+  border-image: linear-gradient(to bottom, #39FF14, transparent);
+  border-image-slice: 1;
+  padding: 30px;
+}
+
+.wrapper:only-child{
+  opacity: 100%;
+}
+
+.fun{
+  border: 0;
+  border-radius: 10px;
+  background-image: var(--gradient);
+  background-size: 300%;
+  background-position: left;
+  animation: tag-animation 1.5s infinite alternate;
+}
+
+@keyframes tag-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
