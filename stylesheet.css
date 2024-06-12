@@ -8,6 +8,7 @@
 /* #F7F9FB whitish grey */
 body{
   background: #F7F9FB;
+  background-image: url("Relevant\ Experience.png");
   margin: auto 0;
   padding:0;
 }
@@ -215,14 +216,6 @@ ul {
  flex-direction: row;
  justify-content: space-around;
  align-content: space-between;
-}
-
-
-.left {
-  /* padding: 2em; */
-}
-.right {
-  /* padding: 2em; */
 }
 
 .footer{
