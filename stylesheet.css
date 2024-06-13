@@ -8,7 +8,9 @@
 /* #F7F9FB whitish grey */
 body{
   background: #F7F9FB;
-  background-image: url("Relevant\ Experience.png");
+  background-image: url("Relevant\ Experience (4).png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: auto 0;
   padding:0;
 }
