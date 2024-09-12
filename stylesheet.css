@@ -84,21 +84,29 @@ ul {
   list-style: none;
 }
 
-.container{
+.main container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.container-top{
+.top container{
   display:flex;
   flex-direction: row;;
   justify-content: space-around;
 }
-.container-bottom{
+.bottom-container{
   display:flex;
   flex-direction: row;
-  justtify-content: space-around;
+  justify-content: space-around;
 }
-
-
+.left-container {
+  disply: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.right-container {
+  disply: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
