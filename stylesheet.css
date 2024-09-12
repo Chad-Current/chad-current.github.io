@@ -7,9 +7,7 @@
 /* #8FC1E3 lighest blue */
 /* #F7F9FB whitish grey */
 body{
-  background: #F7F9FB;
-  background-image: url("Relevant\ Experience (4).png");
-  background-repeat: no-repeat;
+  background: #F4F2F2;
   background-size: cover;
   margin: auto 0;
   padding:0;
@@ -25,7 +23,7 @@ body::-webkit-scrollbar-thumb{
 }
 :root{
    font-size: 12px;
-   --main-color: #8FC1E3;
+    --main-color: #8FC1E3;
    --sub-color: #EEF1EF;
    --bar-color: #050505;
    --a-color: #31708E;
@@ -38,7 +36,7 @@ body::-webkit-scrollbar-thumb{
    --spacing-bottom-bar: 5em 0em 20em 0em;
    --spacing-main: 10em 2em;
    --spacing-sub: 35em 2em;
-   --gradient: linear-gradient(to right, #4D4DFF, #39FF14);
+   --gradient: linear-gradient(to right, #4D4DFF, #39FF14); 
  }
 
 a {
@@ -48,8 +46,8 @@ a {
   font-family: var(--sub-font);
   font-weight: 600;
   line-height: 30px;
-  color: var(--a-color);
-  transition: all .35s ease-out;
+   color: var(--a-color); 
+/*   transition: all .35s ease-out; */
   display: block;
 }
 
