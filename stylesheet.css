@@ -84,13 +84,13 @@ ul {
   list-style: none;
 }
 
-.main container{
+.main-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.top container{
+.top-container{
   display:flex;
   flex-direction: row;;
   justify-content: space-around;
