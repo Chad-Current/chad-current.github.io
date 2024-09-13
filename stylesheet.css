@@ -61,6 +61,7 @@ h1{
   font-size: 3.25rem;
   font-weight: 900;
   color: var(--a-color);
+  line-height: 0.65;
   /* line-height: 2em; */
   /* border: solid 1px red; */
 }
@@ -78,7 +79,8 @@ h3{
   font-weight: 600;
   color: var(--subhead-color);
   line-height: 1em;
-  padding-left: 10px;
+  text-align: center;
+  /* padding-left: 3em; */
   /* border: solid 1px blue; */
 }
 h5 {
@@ -139,9 +141,7 @@ flex-direction: column;
 
 .left-container {
   justify-items: center;
-  flex-basis: 40%;
-  margin: 3em;
-  /* border-style: solid; */
+  flex-basis: 50%;
 }
 
 .right-container {
@@ -166,4 +166,19 @@ flex-direction: column;
 
 .indent {
   padding-left: 40px;
+}
+
+.img-logo {
+  width: 15em;
+  height: 15em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.sub {
+  font-size: 0.55em;
+  padding-left: 5px;
 }
