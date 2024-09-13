@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb{
 a:hover {
   color: var(--a-hover-color);
   background-color: var(--a-bgcolor);
-  box-shadow:12px 12px 12px rgba(0,0,0,0.1),-10px -10px 10px, rgba(255,255,255,1)
+  box-shadow:12px 12px 12px rgba(0,0,0,0.1),-10px -10px 10px, rgba(255,255,255,1);
 }
 
 h1{
