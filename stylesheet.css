@@ -7,7 +7,8 @@
 /* #8FC1E3 lighest blue */
 /* #F7F9FB whitish grey */
 body{
-  background-color: rgba(249,202,78,1);
+  /* background-color: rgba(249,202,78,1); */
+  background-color: #FAFAFA;
   margin: 0 auto;
 }
 
@@ -94,7 +95,7 @@ i{
 
 img{
   /* position:relative; */
-  border: none;
+  border:none;
 }
 
 /* p{
@@ -152,7 +153,7 @@ flex-direction: column;
   display:flex;
   flex-direction:column;
   align-items: center;
-  padding-top: 5em;
+  padding-top: 10em;
   width: clamp(400px, 50vw, auto);
 }
 
@@ -195,16 +196,19 @@ flex-direction: column;
 }
 
 .icon {
-  width: 10rem;
-  padding-top: 2em;
+  width: 25em;
+  /* padding-top: 2em; */
   transition: 0.7s;
+  /* border: solid 1px transparent; */
+  /* border-radius: 20px; */
 }
 
 
 .select-icon {
   display: flex;
   align-items: center;
-  column-gap: 2em;
+  justify-content: center;
+  column-gap: 0.5em;
 }
 
 .select-icon > h1 {
@@ -229,15 +233,28 @@ flex-direction: column;
   column-gap: 5em;
 }
 
+
+.view-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.view-card:nth-child(2) {
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
 .card {
+  --card-height: 15em;
   display: flex;
   flex-direction: column;
   width: clamp(5em, 100vw, 25em);
-  height: 25em;
+  height: var(--card-height);
   align-items: center;
   background-color: var(--main-color);
   border-radius: 50px;
-  box-shadow: -0.5em -1em 1em var(--card-color), 0em 0em 5em 1px var(--card-outline);
+  box-shadow: -0.5em -1em -1em var(--card-color), 0em 0em 5em 1px var(--card-outline);
   transition: 0.7s ease-in-out;
   overflow: hidden;
   /* position:absolute; */
@@ -245,8 +262,8 @@ flex-direction: column;
 }
 
 .card:hover {
-  background-color: rgba(249,202,78,0.5);
-  box-shadow: -1em -1em 2em 1em var(--card-color), 1em 1em 1.5em 1em var(--card-outline); 
+  background-color: rgba(249,202,78,0.95);
+  box-shadow: -1px -1px 1px 1px var(--card-color), -3px -3px 5px 5px var(--card-outline); 
   width: 27em;
   height: 50em;
   overflow: hidden;
@@ -257,11 +274,23 @@ flex-direction: column;
 }
 
 .card > ul, li {
-  font-size: 1.25em;
+  font-size: 1.5rem;
   font-family: var(--main-font);
   color: var(--other-color);
   line-height: 1.5em;
 }
+
+.card > .icon {
+  position: absolute;
+  margin: -15em 8em 0em 0em;
+}
+
+
+.card:hover > .icon{
+  overflow: hidden;
+  width: calc(var(--card-height)*1.8);
+}
+
 
 .card-line {
   border-image-slice: 1;
