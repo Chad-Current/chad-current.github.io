@@ -226,7 +226,7 @@ flex-direction: column;
   display: flex;
   flex-direction: row wrap;
   align-content: space-around;
-  column-gap: 15em;
+  column-gap: 5em;
 }
 
 .card {
@@ -247,7 +247,7 @@ flex-direction: column;
 .card:hover {
   background-color: rgba(249,202,78,0.5);
   box-shadow: -1em -1em 2em 1em var(--card-color), 1em 1em 1.5em 1em var(--card-outline); 
-  width: 30em;
+  width: 27em;
   height: 50em;
   overflow: hidden;
 }
