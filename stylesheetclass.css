@@ -1,4 +1,8 @@
 body{
+  /* background-image: url(/images/All\ Breed\ Dog\ Obedience.png);
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-color: #fafafa;
   min-height: 100dvh;
   min-height: 100svh;
   margin: 0 auto;
@@ -43,7 +47,7 @@ body::-webkit-scrollbar-thumb{
     font-family: var(--sub-font);
     font-weight: 300;
     color: var(--a-color); 
-  }
+   }
   
 a:hover {
     color: var(--a-hover-color);
@@ -76,11 +80,7 @@ h5 {
 .main-container{
   display: flex;
   flex-direction: column;
-  background-image: url(/images/BlankBGSlideOver.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 /* .img-slide{
   background-image: url(/images/BlankBGSlideOver.png);
   background-size: cover;
@@ -147,20 +147,23 @@ h5 {
     display: flex;
     flex-direction: row wrap;
     justify-content:space-evenly;
-    align-self: center;
+    align-items: center;
     column-gap: 3.50rem; 
     margin: 0em 10em 0em 0em;
+    /* box-shadow: 0px 2px 3px 1px rgba(0,0,0,1); */
   }
+  
+  
   
   .button-87 {
     margin: 0;
-    padding: 1em;
+    padding: 1.25em;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: rgba(0,0,0,1);
-    border-radius: 50px;
+    border-radius: 25px;
     display: block;
     border: 0px;
     font-weight: 500;
@@ -182,7 +185,6 @@ h5 {
   .button-87:active {
     transform: scale(0.95);
   }
-  
 
 .img-logo {
     width: 150px;
@@ -205,28 +207,37 @@ h5 {
 
 .card-wrapper {
   display: grid;
-  border: solid 1px red;
-  grid-template-columns: 2fr 1fr;
+  /* border: solid 1px red; */
+  grid-template-columns: 50px 2fr 50px 1fr 150px;
   grid-row: auto;
-  margin: 20em 3em 0em;
+  margin: 0em 0em 10em 0em;
+  align-items: center;
   /* backdrop-filter: blur(1px);  */
 }
 
 .card-wrapper img{
     position: absolute;
-    margin:-7em 0em 0em 3em; 
-    width: 270px;
-    height: 270px;
+    margin: -12em 0em 0em -2em; 
+    padding: 5em 3em;
     /* fix scaling issue */
     z-index: 1;
 }
 
+:where(.card-wrapper:hover) .new-card {
+  transform: scale(1.2);
+}
+
+/* .card-wrapper:nth-of-type(1n+2){
+  background-image: url(/images/BlankBG.png);
+} */
+
 
 :where([class^='box']) h1 {
     font-size: 2.5rem;
-    font-family: var(--main-font);
-    color: #53acdb;
+    font-family: var(--sub-font);
+    color: rgb(83, 172, 219);
     text-align: left;
+    /* padding-right: 10em; */
   }
   
 :where([class^='box']) p {
@@ -236,11 +247,11 @@ h5 {
     color: #53acdb;
     text-align: left;
     line-height: 3em;
-
+    /* padding-right: 10em; */
   }
 
 .cards-display {
-  background-color: rgba(83, 172, 219,1);
+  margin: 2em 0em 0em;
 }
 
 .cards-display:after {
@@ -252,24 +263,25 @@ h5 {
 
 .cards-display [class^='box-text'] {
    text-align: left;
-   margin: 0em 10em 0em 5em;
-   backdrop-filter: blur(1px);
+   margin: 0em 5em 0em 5em;
+   /* backdrop-filter: blur(1px); */
   }
     
 .new-card {
     width: var(--card-width);
     height: var(--card-height);
     background-color: ghostwhite;
-    margin: 0em 0em 0em -5em;
+    /* margin: 0em 0em 0em -5em; */
     box-shadow: 1px 1px 3px 1px rgba(255,255,255,0.5), 1px 1px 3px 1px rgba(0,0,0,0.5);
     border-radius: 50px;
+    transition: 700ms ease-in-out;
   }  
   
 .design-card {
   width: var(--card-width);
   height: var(--card-height);
   margin: 0;
-  padding: 0;
+  padding: 0em 0em 5em 0em;
   font-size: 1.75em;
   border-radius: 50px;
   box-shadow: 1px 1px 5px rgba(255,255,255, 1), 1px 1px 5px rgba(0,0,0,0.1);
@@ -343,3 +355,32 @@ span h1{
     z-index: 1;
     }
   
+.hr-design {
+  margin: 0em 5em 0em 0em;
+  border:    1px solid #53acdb;
+  width: 90%;
+  /* transform: translateX(-10%); */
+  /* height:    2px; */
+
+}
+
+
+/* .hr-design::before {
+  content: "";
+  position: absolute;
+  width: 75em;
+  height: 20px;
+  background-color: #fafafa;
+  border-left: solid 2px #fafafa;
+
+}
+
+.hr-design::after {
+  content: "";
+  position: absolute;
+  width: 75em;
+  height: 20px;
+  background-color: #fafafa; 
+  border-left: solid 2px #fafafa;
+
+} 
