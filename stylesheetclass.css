@@ -1,7 +1,7 @@
 body{
-  background-image: url(/images/bkgd.svg);
-  background-size:contain;
-  background-repeat: repeat;
+  background-image: url(/images/All\ Breed\ Dog\ Obedience\ No\ Wording.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   /* border-color: #fafafa; */
   min-height: 100dvh;
   min-height: 100svh;
@@ -24,36 +24,108 @@ body::-webkit-scrollbar-thumb{
   
   
 :root{
-     font-size: 12px;
-     --main-color: #f9ca4e;
-     --card-color: rgba(243, 195, 62, 1);
-     --card-outline: rgba(0,0,0,0.05);
-     --main-font: "Comfortaa";
-     --sub-font: "Merriweather";
-     --anchor-font:"Comfortaa";
-     --general-text-color: #000000;
-     --purple: #c7c7ff; 
-     --orange: #ffd8b3;
-     --green: #a9ecbf;
-     --pink: #f33be1;
-     --card-height:425px; /* 1.5 Scaling HxW */
-     --card-width: 637px;
-   }
-  
-  a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: var(--sub-font);
-    font-weight: 300;
-    color: var(--a-color); 
-   }
-  
-a:hover {
-    color: var(--a-hover-color);
-    /* background-color: var(--a-bgcolor); */
+    font-size: 12px;
+    --main-color: #f9ca4e;
+    --card-color: rgba(243, 195, 62, 1);
+    --card-outline: rgba(0,0,0,0.05);
+    --main-font: "Comfortaa";
+    --sub-font: "Merriweather";
+    --anchor-font:"Comfortaa";
+    --general-text-color: #000000;
+    --purple: #c7c7ff; 
+    --orange: #ffd8b3;
+    --green: #a9ecbf;
+    --pink: #f33be1;
+    --card-height:425px; /* 1.5 Scaling HxW */
+    --card-width: 637px;
   }
   
+   /* a:hover {
+    color: #FAFAFA;
+    transform: scale3d(1.1);
+    background-color: rgba(71, 126, 232, 1);
+    border-radius: 10px;
+   } */
+   
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 5.50rem; 
+    margin: 0em 10em 0em 0em;
+    /* box-shadow: 0px 2px 3px 1px rgba(0,0,0,1); */
+  }
+
+  .nav-bar a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: rgb(9, 6, 5, 1);
+    background-color: rgba(83, 172, 219,0.75);
+    border-radius: 10px;
+    transition: all 400ms cubic-bezier(0, 0.2, 0, 0.2);
+    padding: 0.2em 1dvh;
+    box-shadow: 0px 1px 1px 1px rgba(83, 172, 219,0.75);
+  }
+ 
+ .button-87 {
+   position: relative;
+   margin:0;
+   cursor: pointer;
+   /* background-color: rgba(71, 126, 232, 0.1); */
+   outline: 3px solid rgba(83, 172, 219,0.75);
+   transition: 300ms cubic-bezier(0, 0.2, 0, 0.2);
+ }
+ 
+ .button-87:hover {
+   outline-color: rgba(83, 172, 219,0.95);
+   outline-offset: 10px;
+   backdrop-filter: blur(1px);
+   color:#FAFAFA;
+ }
+  
+ .nav-bar-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  column-gap: 5.50rem; 
+  margin: 0em 10em 0em 0em;
+}
+
+.nav-bar-class a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: rgb(9, 6, 5, 1);
+  background-color: rgba(83, 172, 219,0.75);
+  border-radius: 10px;
+  transition: all 400ms cubic-bezier(0, 0.2, 0, 0.2);
+  padding: 0.2em 1dvh;
+  box-shadow: 0px 1px 1px 1px rgba(83, 172, 219,0.75);
+}
+
+.button-88 {
+  position: relative;
+  margin:0;
+  cursor: pointer;
+  /* background-color: rgba(71, 126, 232, 0.1); */
+  outline: 3px solid rgba(83, 172, 219,0.75);
+  transition: 300ms cubic-bezier(0, 0.2, 0, 0.2);
+}
+
+.button-88:hover {
+  outline-color: rgba(83, 172, 219,0.95);
+  outline-offset: 10px;
+  backdrop-filter: blur(1px);
+  color:#FAFAFA;
+}
+
+
 h1{
     font-family: var(--main-font);
     font-size: 3.25rem;
@@ -153,39 +225,6 @@ h5 {
     /* box-shadow: 0px 2px 3px 1px rgba(0,0,0,1); */
   }
   
-  
-  
-  .button-87 {
-    margin: 0;
-    padding: 1.25em;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgba(0,0,0,1);
-    border-radius: 50px;
-    display: block;
-    border: 0px;
-    font-weight: 500;
-    box-shadow: 0px 0px 14px -7px #53acdb;
-    background-image: linear-gradient(45deg, rgba(82, 171, 218,0.75) 0%, rgba(82, 171, 218,0.90)  51%, rgba(83, 172, 219,1)  100%);
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-87:hover {
-    background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .button-87:active {
-    transform: scale(0.95);
-  }
-
 .img-logo {
     width: 150px;
     height: 150px;
@@ -208,7 +247,7 @@ h5 {
 .card-wrapper {
   display: grid;
   /* border: solid 1px red; */
-  grid-template-columns: 100px 2fr 100px 1fr 100px;
+  grid-template-columns: 50px 1fr 50px 2fr 50px;
   grid-row: auto;
   margin: 10em 0em 30em 0em;
   align-items: center;
@@ -267,7 +306,7 @@ h5 {
   }
 
 .cards-display:after {
-  content: "";
+  /* content: ""; */
   width: inherit;
   height: inherit;
   box-shadow: -1px -1px 1px 5px rgba(0,0,0,1);
@@ -372,6 +411,7 @@ span h1{
   margin: 0em 5em 0em 0em;
   border:    1px solid #53acdb;
   width: 90%;
+  align-self: center;
   /* transform: translateX(-10%); */
   /* height:    2px; */
 
