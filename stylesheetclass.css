@@ -1,8 +1,8 @@
 body{
-  /* background-image: url(/images/All\ Breed\ Dog\ Obedience.png);
-  background-size: contain;
-  background-repeat: no-repeat; */
-  border-color: #fafafa;
+  background-image: url(/images/bkgd.svg);
+  background-size:contain;
+  background-repeat: repeat;
+  /* border-color: #fafafa; */
   min-height: 100dvh;
   min-height: 100svh;
   margin: 0 auto;
@@ -163,7 +163,7 @@ h5 {
     transition: 0.5s;
     background-size: 200% auto;
     color: rgba(0,0,0,1);
-    border-radius: 25px;
+    border-radius: 50px;
     display: block;
     border: 0px;
     font-weight: 500;
@@ -208,11 +208,23 @@ h5 {
 .card-wrapper {
   display: grid;
   /* border: solid 1px red; */
-  grid-template-columns: 50px 2fr 50px 1fr 150px;
+  grid-template-columns: 100px 2fr 100px 1fr 100px;
   grid-row: auto;
-  margin: 0em 0em 10em 0em;
+  margin: 10em 0em 30em 0em;
   align-items: center;
-  /* backdrop-filter: blur(1px);  */
+  border-radius: 50px;
+  -webkit-transition:400ms ease-in-out;
+  -moz-transition:400ms ease-in-out;
+  -ms-transition:400ms ease-in-out;
+  -o-transition:400ms ease-in-out;
+  transition:400ms ease-in-out;
+
+}
+
+.new-card:hover {
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  box-shadow: 0em 0em 0.5em 0.5em rgba(82, 171, 218,0.8);
 }
 
 .card-wrapper img{
@@ -224,7 +236,7 @@ h5 {
 }
 
 :where(.card-wrapper:hover) .new-card {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /* .card-wrapper:nth-of-type(1n+2){
@@ -235,8 +247,11 @@ h5 {
 :where([class^='box']) h1 {
     font-size: 2.5rem;
     font-family: var(--sub-font);
-    color: rgb(83, 172, 219);
+    /* color: #090605; */
+    color: #fafafa;
     text-align: left;
+    margin: 0em 0em 0em 0em;
+    
     /* padding-right: 10em; */
   }
   
@@ -244,37 +259,35 @@ h5 {
     font-size: 1.25rem;
     font-family: var(--sub-font);
     font-weight: 600;
-    color: #53acdb;
+    color: #090605;
     text-align: left;
-    line-height: 3em;
+    line-height: 2.5em;
+    letter-spacing: 0.075em;
     /* padding-right: 10em; */
   }
-
-.cards-display {
-  margin: 2em 0em 0em;
-}
 
 .cards-display:after {
   content: "";
   width: inherit;
   height: inherit;
-  box-shadow: -2px -5px 1px 5px rgba(0,0,0,1);
+  box-shadow: -1px -1px 1px 5px rgba(0,0,0,1);
 }
 
 .cards-display [class^='box-text'] {
    text-align: left;
    margin: 0em 5em 0em 5em;
-   /* backdrop-filter: blur(1px); */
   }
     
 .new-card {
     width: var(--card-width);
     height: var(--card-height);
-    background-color: ghostwhite;
-    /* margin: 0em 0em 0em -5em; */
-    box-shadow: 1px 1px 3px 1px rgba(255,255,255,0.5), 1px 1px 3px 1px rgba(0,0,0,0.5);
+    /* box-shadow: 1px 1px 3px 1px rgba(255,255,255,0.5), 1px 1px 3px 1px rgba(0,0,0,0.5); */
     border-radius: 50px;
-    transition: 700ms ease-in-out;
+    -webkit-transition:400ms ease-in-out;
+    -moz-transition:400ms ease-in-out;
+    -ms-transition:400ms ease-in-out;
+    -o-transition:400ms ease-in-out;
+    transition:400ms ease-in-out;
   }  
   
 .design-card {
@@ -284,11 +297,11 @@ h5 {
   padding: 0em 0em 5em 0em;
   font-size: 1.75em;
   border-radius: 50px;
-  box-shadow: 1px 1px 5px rgba(255,255,255, 1), 1px 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 5px rgba(255,255,255, 0), -1px -1px 5px 1px rgba(83, 172, 219,1);
   }
   
 #puppy {
-    background-image: url(/images/BDCard.png);
+    background-image: url(/images/BlkPup.svg);
     background-size: contain;
    }
   
