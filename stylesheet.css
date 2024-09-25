@@ -1,10 +1,10 @@
 body{
   /* background-color: rgba(249,202,78,1); */
-  background-color: #211610;
-  background-image: url(images/ABDOTbackground.png);
-  background-position: top;
+  background-image: url(images/Main.svg);
+  /* background-position:top; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 100dvh;
   min-height: 100svh;
   background-color: #FAFAFA;
@@ -25,6 +25,9 @@ body::-webkit-scrollbar-thumb{
   box-sizing: border-box;
 }
 
+.body {
+  background-color: #a9ecbf;
+}
 
 :root{
    font-size: 12px;
@@ -126,6 +129,7 @@ h5 {
 .main-container{
 display: flex;
 flex-direction: column;
+height: 100dvh;
 }
 
 .header{
@@ -177,6 +181,21 @@ flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
+.call-out {
+  display: grid;
+  grid-template-columns: 600px auto auto;
+  grid-template-rows: 350px 500px;
+  grid-template-areas: "blank blank blank"
+                       "call blank blank";
+  p {
+    font-size: 2rem;
+    font-family: var(--sub-font);
+    color: #fafafa;
+    margin: 2em;
+  }
+}
+
 
 .enroll-container {
   display: flex;
