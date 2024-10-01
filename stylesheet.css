@@ -1,6 +1,23 @@
+/* Background colors
+1) #081b31 Oxford Blue 
+2) #0C0F0A Night
+Foreground colors
+3) #B7CE63 Yellow Green (1 - 9,92 Contrast
+                        (2 - 11.05 Checker
+4) #5bc9ff Deep Sky Blue (1 - 9.28
+                        (2- 10.33
+5) #bcd979 Pistachio    (1 - 12.36
+                        (2 - 11.01
+6) #ffc145 Xanthous     (1 - 10.07
+                        (2 - 11.91
+7) #e0ff4f  Chartreuse  (1 - 15.34
+                        (2 - 17.08
+
+*/
+
 body{
   /* background-color: rgba(249,202,78,1); */
-  background-image: url(images/Main.svg);
+  background-image: url(images/All\ Breed\ Dog\ Obedience.png);
   /* background-position:top; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,13 +38,11 @@ body::-webkit-scrollbar-thumb{
   background: var(--sub-color);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.body {
-  background-color: #a9ecbf;
-}
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
 
 :root{
    font-size: 12px;
@@ -38,64 +53,57 @@ body::-webkit-scrollbar-thumb{
    --sub-font: "Merriweather";
    --anchor-font:"Comfortaa";
    --general-text-color: #000000;
-   --purple: #c7c7ff; 
-   --orange: #ffd8b3;
-   --green: #a9ecbf;
-   --pink: #f33be1;
+   --nav-bar-background: #ffc145;
+   --nav-bar-text: #0C0F0A;
+   --nav-bar-text-hover: #5bc9ff;
    --card-height:325px; /* 1.5 Scaling HxW */
    --card-width: 487px;
  }
 
- 
- /* a:hover {
-   color: #FAFAFA;
-   transform: scale3d(1.1);
-   background-color: rgba(71, 126, 232, 1);
-   border-radius: 10px;
-  } */
-  
-  .nav-bar {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    column-gap: 5.50rem; 
-    margin: 0em 10em 0em 0em;
-    /* box-shadow: 0px 2px 3px 1px rgba(0,0,0,1); */
-  }
+ .nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  column-gap: 5.50em; 
+  margin: 0em 10em 0em 0em;
+  /* box-shadow: 0px 2px 3px 1px rgba(0,0,0,1); */
+}
 
-  .nav-bar a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: var(--main-font);
-    font-weight: 500;
-    color: rgb(9, 6, 5, 1);
-    background-color: rgba(83, 172, 219,0.75);
-    border-radius: 10px;
-    transition: all 400ms cubic-bezier(0, 0.2, 0, 0.2);
-    padding: 0.2em 1dvh;
-    box-shadow: 0px 1px 1px 1px rgba(83, 172, 219,0.75);
-  }
+.nav-bar a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: var(--nav-bar-text);
+  background-color: var(--nav-bar-background);
+  border-radius: 10px;
+  transition: all 400ms cubic-bezier(0, 0.2, 0, 0.2);
+  padding: 0.2em 1dvh;
+  box-shadow: 0px 1px 1px 1px var(--nav-bar-background);
+}
 
 .button-87 {
-  position: relative;
-  margin:0;
-  cursor: pointer;
-  /* background-color: rgba(71, 126, 232, 0.1); */
-  outline: 3px solid rgba(83, 172, 219,0.75);
+position: relative;
+margin:0;
+cursor: pointer;
+/* background-color: rgba(71, 126, 232, 0.1); */
+outline: 3px solid var(--nav-bar-background);
 }
 
 .button-87:hover {
-  outline-color: rgba(83, 172, 219,0.95);
-  outline-offset: 10px;
-  backdrop-filter: blur(1px);
-  color:#FAFAFA;
+outline-color: var(--nav-bar-background);
+outline-offset: 10px;
+backdrop-filter: blur(1px);
+color:#ffffff;
 }
-/* 
-.button-87:active {
-  transform: scale(0.95);
-} */
 
+.img-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: 0.7s;
+}
 
 h1{
   font-family: var(--main-font);
@@ -119,12 +127,6 @@ h5 {
   /* border: solid 1px green; */
 }
 
-.max {
-  font-family: var(--main-font);
-  font-size: 1.5em;
-  font-weight: 600;
-  color: var(--a-color);
-}
 
 .main-container{
 display: flex;
@@ -144,21 +146,13 @@ height: 100dvh;
   height: clamp(100px, 100vw, 200px);
 }
 
-.main-home{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  padding-top: 15em;
-  width: clamp(400px, 90vw, auto);
-}
-
-.main-class{
-  display:flex;
-  flex-direction:column;
-  margin: 0em 10em 0em;
-  width: clamp(400px, 59vw, auto);
-
-  /* column-gap: 5em; */
+.test-class {
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 5rem;
+    color:var(--card-color);
+  }
 }
 
 .left-container {
@@ -333,14 +327,7 @@ form {
   z-index: 0;
 } */
 
-.img-logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  transition: 0.7s;
-}
-
-.icon {
+/* .icon {
   width: 25em;
   position:absolute;
   z-index: 1;
@@ -350,7 +337,7 @@ form {
 .icon > h1 {
   color: #fafafa;
   font-family: "SUSE";
-}
+} */
 
 
 
