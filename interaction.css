@@ -17,8 +17,8 @@ Foreground colors
 
 body{
   /* background-color: rgba(249,202,78,1); */
-  background-image: url(images/All\ Breed\ Dog\ Obedience\ Only\ Photo.png);
-  /* background-position:top; */
+  background-image: url(images/All\ Breed\ Dog\ Obedience.png);
+  background-position:top;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,18 +45,14 @@ body::-webkit-scrollbar-thumb{
   }
 
 :root{
-   font-size: 12px;
+   font-size: 14px;
    --main-color: #f9ca4e;
-   --main-color: #ffc145;
-   --card-title: #e0ff4f;
-   --card-text: #B7CE63;
-   --card-background-layer-1: #bcd979;
-   --card-background-layer-2: #e0ff4f ;
-   --card-background-layer-3: #ffc145 ;
-   --card-background-dark: #081b31;
+   --card-color: rgba(243, 195, 62, 1);
+   --card-outline: rgba(0,0,0,0.05);
    --main-font: "Comfortaa";
    --sub-font: "Merriweather";
    --anchor-font:"Comfortaa";
+   --anchor-color-last: #081b31;
    --general-text-color: #000000;
    --nav-bar-background: #ffc145;
    --nav-bar-text: #0C0F0A;
@@ -64,6 +60,28 @@ body::-webkit-scrollbar-thumb{
    --card-height:325px; /* 1.5 Scaling HxW */
    --card-width: 487px;
  }
+
+ h1 {
+  margin:0em;
+  font-size: 7rem;
+  font-family: 'Mansalva';
+  letter-spacing: 0.25rem;
+
+}  h3 {
+  font-size: 2rem;
+  font-family: 'Italiana';
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  margin: 1.5em 0em 0em 0em;
+}
+p {
+  font-size: 1.25rem;
+  font-family: 'Italiana';
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  line-height: 2.5rem;
+  margin: 3em 0em 0em 0em;
+}
 
  .nav-bar {
   display: flex;
@@ -77,30 +95,44 @@ body::-webkit-scrollbar-thumb{
 .nav-bar a {
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.05rem;
   font-family: var(--main-font);
   font-weight: 500;
   color: var(--nav-bar-text);
   background-color: var(--nav-bar-background);
   border-radius: 10px;
-  transition: all 400ms cubic-bezier(0, 0.2, 0, 0.2);
-  padding: 0.2em 1dvh;
+  transition: all 400ms cubic-bezier(.18,.69,.25,.74);
+  padding: 0.2em;
   box-shadow: 0px 1px 1px 1px var(--nav-bar-background);
+  &:last-of-type{
+    color: #FAFAFA;
+    background-color:var(--anchor-color-last);
+    box-shadow: 0px 1px 1px 1px var(--anchor-color-last);;
+  }
 }
+
 
 .button-87 {
 position: relative;
 margin:0;
 cursor: pointer;
 /* background-color: rgba(71, 126, 232, 0.1); */
-outline: 3px solid var(--nav-bar-background);
+outline: 2px solid var(--nav-bar-background);
+&:last-of-type{
+  outline: 3px solid var(--anchor-color-last);#5bc9ff;
+}
 }
 
 .button-87:hover {
 outline-color: var(--nav-bar-background);
-outline-offset: 10px;
+outline-offset: 5px;
 backdrop-filter: blur(1px);
 color:#ffffff;
+ &:last-of-type {
+  outline-color:var(--anchor-color-last);;
+  outline-offset: 5px;
+  color: var(--nav-bar-background);
+ }
 }
 
 .img-logo {
@@ -110,33 +142,9 @@ color:#ffffff;
   transition: 0.7s;
 }
 
-h1{
-  font-family: var(--main-font);
-  font-size: 3.25rem;
-  font-weight: 900;
-  color: var(--a-color);
-  /* border: solid 1px red; */
-}
-
-h3{
-  font-family: var(--main-font);
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: var(--subhead-color);
-}
-
-h5 {
-  font-family: var(--sub-font);
-  font-size: 20px;
-  color: var(--other-color);
-  /* border: solid 1px green; */
-}
-
-
 .main-container{
 display: flex;
 flex-direction: column;
-height: 100dvh;
 }
 
 .header{
@@ -149,15 +157,6 @@ height: 100dvh;
 .header .img-logo {
   width: clamp(100px, 100vw, 200px);
   height: clamp(100px, 100vw, 200px);
-}
-
-.test-class {
-  display: flex;
-  justify-content: center;
-  h1 {
-    font-size: 5rem;
-    color:var(--card-color);
-  }
 }
 
 .left-container {
@@ -181,173 +180,73 @@ height: 100dvh;
   align-items: center;
 }
 
-.call-out {
+.splash-container {
   display: grid;
-  grid-template-columns: 600px auto auto;
-  grid-template-rows: 350px 500px;
-  grid-template-areas: "blank blank blank"
-                       "call blank blank";
-  p {
-    font-size: 2rem;
-    font-family: var(--sub-font);
-    color: #fafafa;
-    margin: 2em;
-  }
-}
-
-
-.enroll-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
   align-items: flex-start;
-  margin: 3em 10em;
-  box-shadow: 10px 10px 5px rgba(0,0,0,0.09);
-  background-color: var(--card-background-dark);
-
+  grid-template-columns: 1fr 1.9fr;
+  grid-template-rows: auto;
+  column-gap: 2em;
 }
 
-
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 400px;
-  max-height: 100%;
-  /* margin: 20em 0em 0em; */
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  /* box-shadow: 10px 10px 5px rgba(0,0,0,0.09); */
-}
-
-.enroll-form {
+.col-1 {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  padding: 3em 1em;
-  color: white;
-  border-radius: 10px;
+  /* margin: 0em 1.5em 0em 10em; */
   h1 {
-    font-size: 1.25rem;
-    margin: 0 0 24px 0;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 1.75rem;
+    text-wrap: nowrap;
+    font-size: 3.5rem;
   }
-  .form-input-material {
-    margin: 4px 0;
+  h3 {
+    text-transform: uppercase;
+    text-align: right;
+    text-wrap: nowrap;
+    letter-spacing: 0.75em;
+    font-size: 1rem;
   }
-  .btn {
-    width: 100px;
-    height: 30px;
-    margin: 18px 0 5px 0;
-    border-radius: 10px;
-  }
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1em 0em;
-  --input-default-border-color: white;
-  --input-border-bottom-color: white;
-    input {
-    color: black;
-  }
-    label {
-      font-size: 1.25rem;
-      font-family: Suse;
-      font-weight: 300;
-      letter-spacing: 0.1rem;
-      /* margin: 0.25em 0em; */
-    }
-    input {
-      background: ghostwhite;
-      width: 100%;
-      height:25px;
-      border-radius: 0.75em;
-      margin: 0.5em;
+  p {
+    padding: 1em 3em 0em 5em;
     }
 }
-
-.enroll-form::after {
-  content: "";
-  width:inherit;
-  height: inherit;
-  position: absolute;
-  background-color: transparent;
-  /* box-shadow: 0px 0px 0.25em 0px rgba(255,255,255,1), 1px 1px 0.25em 1px rgba(0,0,0,1), 
-  -1px 0px 1px 5px rgba(0,0,0,0.1); */
-  z-index: -2;
-}
-
-/* padding: 8px 20px;
-.btn {
-  border-radius: 0;
-  overflow: hidden;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      var(--main-color),
-      transparent
-    );
-    transform: translateX(-150%);
-    transition: 0.6s;
+.col-2 {
+  color:#ffc145;
+  h1 {
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1.75rem;
+    text-wrap: nowrap;
+    font-size: 3.5rem;
   }
-
-  /* &:hover {
-    background: transparent;
+  h3 {
+    text-transform: uppercase;
+    text-align: left;
+    text-wrap: nowrap;
+    letter-spacing: 0.75em;
+    font-size: 1rem;
   }
-  } */
-
-/* #submit-button{
-  position: relative;
-  font-family: var(--main-font);
-  font-weight: 400;
-  height: 50px;
-  width: 20%;
-  letter-spacing: 0.05em;
-  border-radius: 0.8em;
-  cursor: pointer;
-  background: var(--green);
-  border: solid 1px ghostwhite;
-  color: rgba(0,0,0,0.9);
-  overflow: hidden;
-} */
-
-/* #submit-button:active {
-  background: rgba(169, 236, 191,0.9);
-  color: rgba(0,0,0,0.7);
-  border: solid 2px rgba(50,200,250,1);
+  p {
+    margin: 4em 55em 0em 0em;
+    padding: 2em;
+    text-align: r;
+    text-wrap: wrap;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
 }
 
-#submit-button::before,
-#submit-button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-} */
 
-/* .icon {
-  width: 25em;
-  position:absolute;
-  z-index: 1;
-  margin: -15em 0em 0em -3em;
+
+.glass-poly {
+  /* border: solid 1px red; */
+  border-radius: 0em 5em 0em 0em;
+  backdrop-filter: blur(0.5em);
+  box-shadow: 0.25em 0.25em 5em -1em rgba(255, 193, 69,0.45),0.25em 0.25em 13em -1em rgba(255,255,255,0.1);
+  /* outline: 1px solid rgba(255, 193, 69,0.1);
+  outline-offset: -3px; */
 }
 
-.icon > h1 {
-  color: #fafafa;
-  font-family: "SUSE";
-} */
 
 
 
