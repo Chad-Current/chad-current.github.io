@@ -21,10 +21,11 @@ Foreground colors
 } */
 body{
   background-image: url(images/All\ Breed\ Dog\ Obedience\ Only\ Photo.png);
-  background-position:top;
   background-repeat: no-repeat;
-  background-size: contain;
-
+  background-size: cover;
+  background-position:top;
+  /* max-width: 100vw; */
+  /* max-height: 100vh; */
   min-height: 100dvh;
   min-height: 100svh;
   background-color: #FAFAFA;
