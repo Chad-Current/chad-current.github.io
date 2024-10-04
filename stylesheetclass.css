@@ -12,7 +12,7 @@ Foreground colors
                         (2 - 11.91
 7) #e0ff4f  Chartreuse  (1 - 15.34
                         (2 - 17.08
-
+#fff8e8  #ffedcb #a78d65
 */
 /* html {
   animation: 1s fadeIn ease-in;
@@ -20,14 +20,9 @@ Foreground colors
   -moz-animation: 1s fadeIn ease-in;
 } */
 body{
-  background-image: url(images/All\ Breed\ Dog\ Obedience\ Only\ Photo.png);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  background-color: rgb(250, 250, 250, 0.6);
-  max-height: 100dvh;
-  max-height: 100svh;
-  background-color: var(--faded-white);
+  background-image: linear-gradient(to left top, #f0ffff, #e4fff9, #e1ffea, #eaffd6, #fdfac2);
+      /* max-height: 100dvh;
+  max-height: 100svh; */
   margin: 0 auto;
   }
   
@@ -50,7 +45,8 @@ body::-webkit-scrollbar-thumb{
   :root{
     font-size: 14px;
     --main-color: #f9ca4e;
-    --callout: #C71450;
+    --callout: #0db982;
+    --callout-text:#000000;
     --chartreuse: #e0ff4f;
     --deep-blue:#5bc9ff;
     --faded-white:rgba(250,250,250,0.6);
@@ -164,8 +160,6 @@ body::-webkit-scrollbar-thumb{
    padding: 0.15em 0.15em;
    box-shadow: 0px 1px 1px 1px var(--nav-bar-background);
    &:last-of-type{
-     color:#ffffff;
-     /* color: var(--night); */
      background-color:var(--callout);
      box-shadow: 0px 1px 1px 1px var(--oxford-blue);
      font-weight: 500;
@@ -179,6 +173,7 @@ body::-webkit-scrollbar-thumb{
  /* background-color: rgba(71, 126, 232, 0.1); */
  outline: 2px solid var(--oxford-blue);
  &:last-of-type{
+   color: var(--callout-text);
    outline: 2px solid var(--night);
   }
  }
@@ -193,7 +188,7 @@ body::-webkit-scrollbar-thumb{
   &:last-of-type {
    outline-color:var(--callout);
    outline-offset: 5px;
-   color:#ffffff;
+   color:var(--callout-text);
    /* color: var(--night); */
    /* font-weight: 600; */
   }
@@ -269,10 +264,10 @@ body::-webkit-scrollbar-thumb{
 	position: relative;
 	display: flex;
   flex-direction: column;
-  background-color: transparent;
+  box-shadow:   1.25em 1.25em 1em 0em rgb(253, 250, 194,.35), 0.05em 0.05em 1em 0em rgba(0, 0, 0,0.25);
+  /* background-color: transparent; */
 	/* align-content: space-around; */
 	transition: 700ms ease-in-out;
-	box-shadow:  0em -1.5em 5em 0em rgba(255,255,255,0.25);
 	&:hover { 
 		transform: translateY(100px);
     .info p{
@@ -284,6 +279,7 @@ body::-webkit-scrollbar-thumb{
       transition: 700ms ease-in-out;
       opacity: 1;
       scroll-behavior: smooth;
+      box-shadow:   1.25em 1.25em 1em 0em rgb(253, 250, 194,.25), 0.05em 0.05em 1em 0em rgba(0, 0, 0,0.25);
      }
      .info + .banner {
       opacity: 0;
@@ -427,7 +423,7 @@ body::-webkit-scrollbar-thumb{
   background-color: transparent;
 	/* align-content: space-around; */
 	transition: 700ms ease-in-out;
-	box-shadow:  0em -1.5em 5em 0em rgba(255,255,255,0.25);
+  box-shadow:   1.25em 1.25em 1em 0em rgb(253, 250, 194,.25), 0.05em 0.05em 1em 0em rgba(0, 0, 0,0.25);
 	&:hover { 
 		transform: translateY(100px);
     .info-special p{
@@ -439,6 +435,7 @@ body::-webkit-scrollbar-thumb{
       transition: 700ms ease-in-out;
       opacity: 1;
       scroll-behavior: smooth;
+      box-shadow:   1.25em 1.25em 1em 0em rgb(253, 250, 194,.25), 0.05em 0.05em 1em 0em rgba(0, 0, 0,0.25);
      }
      .info-special + .banner-special {
       opacity: 0;
@@ -606,10 +603,10 @@ body::-webkit-scrollbar-thumb{
   z-index: -1;
 }
 
-
+/* 
 @keyframes fadeIn {
   from { opacity: 0;
   }
   to { opacity: 1;
   }
-}
+} */

@@ -1,0 +1,196 @@
+/* Background colors
+1) #081b31 Oxford Blue 
+2) #0C0F0A Night
+Foreground colors
+3) #B7CE63 Yellow Green (1 - 9,92 Contrast
+                        (2 - 11.05 Checker
+4) #5bc9ff Deep Sky Blue (1 - 9.28
+                        (2- 10.33
+5) #bcd979 Pistachio    (1 - 12.36
+                        (2 - 11.01
+6) #ffc145 Xanthous     (1 - 10.07
+                        (2 - 11.91
+7) #e0ff4f  Chartreuse  (1 - 15.34
+                        (2 - 17.08
+
+*/
+
+body{ 
+  background-image: linear-gradient(to left top, #f0ffff, #e4fff9, #e1ffea, #eaffd6, #fdfac2);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+  background-color: rgb(250, 250, 250, 0.6);
+  min-height: 100dvh;
+  min-height: 100svh;
+  background-color: #FAFAFA;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar{
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track{
+  background: #050505;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--sub-color);
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
+
+:root{
+   font-size: 14px;
+   --main-color: #f9ca4e;
+   --callout: #C71450;
+   --chartreuse: #e0ff4f;
+   --deep-blue:#5bc9ff;
+   --faded-white:rgba(250,250,250,0.6);
+   --oxford-blue:#081b31;
+   --pistachio:#bcd979;
+   --night:#0C0F0A;
+   --xanthous: #ffc145;
+   --yellow-green:#B7CE63; 
+   --card-color: rgba(243, 195, 62, 1);
+   --card-outline: rgba(0,0,0,0.05);
+   --main-font: "Merriweather";
+   --sub-font: "Merriweather";
+   --anchor-font:"Comfortaa";
+   --anchor-color-last: #081b31;
+   --general-text-color: #000000;
+   --nav-bar-background: #ffc145;
+   --nav-bar-text: #0C0F0A;
+   --nav-bar-text-hover: #5bc9ff;
+   --card-height:325px; /* 1.5 Scaling HxW */
+   --card-width: 487px;
+ }
+
+ h1 {
+  margin:0em;
+  font-size: 7rem;
+  font-family: 'Mansalva';
+  letter-spacing: 0.25rem;
+
+}  h3 {
+  font-size: 2rem;
+  font-family: 'Italiana';
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  margin: 1.5em 0em 0em 0em;
+}
+p {
+  font-size: 1.25rem;
+  font-family: 'Italiana';
+  font-weight: 600;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  column-gap: 2.50em; 
+  /* box-shadow: 0px 2px 3px 1px rgba(0,0,0,1); */
+}
+
+.nav-bar a {
+  width:13em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: var(--oxford-blue);
+  background-color: var(--nav-bar-background);
+  border-radius: 0em 0.5em ;
+  transition: all 200ms cubic-bezier(.43,.42,.56,.56);
+  padding: 0.15em 0.15em;
+  box-shadow: 0px 1px 1px 1px var(--nav-bar-background);
+  &:last-of-type{
+    color:#ffffff;
+    /* color: var(--night); */
+    background-color:var(--callout);
+    box-shadow: 0px 1px 1px 1px var(--oxford-blue);
+    font-weight: 500;
+  }
+}
+
+.button-87 {
+position: relative;
+margin:0;
+cursor: pointer;
+/* background-color: rgba(71, 126, 232, 0.1); */
+outline: 2px solid var(--oxford-blue);
+&:last-of-type{
+  outline: 2px solid var(--night);
+ }
+}
+
+.button-87:hover {
+outline-color: var(--xanthous);
+outline-offset: 5px;
+backdrop-filter: blur(1px);
+color: var(--oxford-blue);
+background-color: var(--xanthous);
+font-weight: 900;
+ &:last-of-type {
+  outline-color:var(--callout);
+  outline-offset: 5px;
+  color:#ffffff;
+  /* color: var(--night); */
+  /* font-weight: 600; */
+ }
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.7s;
+  margin:1.5em 0em 0em 5em;
+}
+
+.main-container{
+display: flex;
+flex-direction: column;
+}
+
+.header{
+  border-color: #050505;
+  display:flex;
+  flex-flow: row row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  .right-container {
+    margin-top: 5em;
+  }
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+
+.right-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+  height: auto;
+}
+
+.gridclass {
+  display:grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 400px auto;
+  img {
+    width: 600px;
+    height: auto;
+  }
+}
