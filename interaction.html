@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arimo|Comfortaa|Merriweather|SUSE&display=swap" type="text/css">
-  <link rel="stylesheet" href="interaction.css" type="text/css">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <link rel="stylesheet" href="stylesheet.js" type="text/js">
   <script src="https://kit.fontawesome.com/ea6a27c21b.js" crossorigin="anonymous"></script>
   <title>Test Page</title>
@@ -15,75 +15,36 @@
 <body>
     <div class="main-container">
         <div class="header">
-            <div class="left-container">
-              <div class="header"><a href="/index.html"><img src="images/logo.png" class="img-logo"/></a>
-              </div>        
-            </div>
+          <div class="left-container">
+            <a href="/index.html"><img src="images/logo.png" class="img-logo"/></a>
+            </div>        
             <div class="right-container">
               <nav id="navbar" class="nav-bar">
                 <a href="#" class="button-87">About US</a>
                 <a href="/classes.html" class="button-87">Classes</a>
                 <a href="#" class="button-87">Contact Us</a>
                 <a href="#" class="button-87">FAQs</a>                      
-                <!-- <a href="/interaction.html" class="button-87">Enrollment</a> -->
-              </nav>
+                <a href="/interaction.html" class="button-87">My Enrollment</a>
+                </nav>
             </div>
           </div>
+             <div class="login-bar">
+                <form>
+                  <img src="images/paw.png" class="form-logo">
+                  <div>
+                    <input type="email" placeholder="USERNAME" autocomplete="false"></input>
+                  </div>
+                  <div>
+                    <input type="password" placeholder="PASSWORD"="false"></input>
+                  </div>
+                  <div><button>Log in</button>
+                  </div>
+                </form>
+              </div>
+
+        </div>
             
-   <div class="enroll-container">
-    <div></div>
-    <form class="enroll-form" action="javascript:void(0);">
-        <h1>Enrollment Form</h1>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input required type="text" placeholder="" autocomplete="off" class="name">
-            <!-- <span>Name</span> -->
-        </input>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input required type="email" placeholder="user@email.com" autocomplete="off" class="email">
-            <!-- <span>Email</span> -->
-        </input>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input required type="phone" placeholder="(555) 555-5555" autocomplete="off" class="phone">
-            <!-- <span>Phone Number</span> -->
-        </input>
-        </div>
-        <div class="form-group">
-            <label for="accept">Accept</label>
-            <input required type="checkbox" class="cbx">
-            <span>
-                Button to load enrollment paperwork
-            </span>
-            <!-- <span>Phone Number</span> -->
-        </input>
-        </div>
-        <div class="form-group">
-            <button name="submit" type="button" class="btn btn-primary btn-ghost" id="submit-button">
-            <span>Submit</span>
-        </button>
-        </div>
-    </form>
-    <div class="instructions">
-        <h1>Enrollment Process</h1>
-        <ul>
-            <li class="list-head">Step 1:</li>
-            <li>Dog & Handler Enrollment Waiver</li>
-            <li>Please use the link below to fill out an 
-                enrollment waiver form for the class that your dog is enrolling in.</br>
-                This step must be completed only one time per dog. The Waiver covers all class offerings.
-            </li>            
-            <li>AFTER COMPLETION OF STEP 1 CONTINUE TO STEP 2 TO PURCHASE YOUR CLASS.</li>
-            <li class="list-head">Step 2:</li>
-            <li>Sign In/Sign Up below and book your class!</li>
-            <li>All class dates and/or times are subject to change, based upon size and/or trainer availability.</li>
-            <li>*Classes are held at 7380 Hickman Road, Windsor Heights, Iowa 50324</li>
-        </ul>
-    </div>
-  </div>
+   
 </div><!-- End Main -->
 </body>
 
